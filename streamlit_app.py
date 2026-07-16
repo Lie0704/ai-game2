@@ -39,7 +39,7 @@ def reset_game():
     st.session_state.current_index = 0
     st.session_state.score = 0
     st.session_state.show_answer = False
-    st.session_state.choice = None
+    st.session_state.pop("choice", None)
 
 
 if "questions" not in st.session_state:
@@ -82,7 +82,7 @@ if current_index < len(questions):
             if current_index + 1 < len(questions):
                 st.session_state.current_index += 1
                 st.session_state.show_answer = False
-                st.session_state.choice = None
+                st.session_state.pop("choice", None)
                 st.rerun()
             else:
                 st.session_state.current_index = len(questions)
