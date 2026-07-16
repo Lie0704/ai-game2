@@ -109,6 +109,12 @@ with bts_tab:
     st.write("BTS는 방탄소년단으로, 한국의 대표적인 보이 그룹입니다.")
     st.write("멤버들은 노래, 춤, 그리고 진심 어린 메시지로 많은 사람들에게 사랑받고 있어요.")
 
+    st.image(
+        "https://img.kbs.co.kr/kbs/2/2024/11/27/23627914_6.png",
+        caption="BTS의 멋진 모습",
+        use_container_width=True,
+    )
+
     st.subheader("BTS의 특징")
     st.markdown(
         "- 멤버는 RM, Jin, Suga, J-Hope, Jimin, V, Jungkook입니다.\n"
